@@ -8,14 +8,17 @@ public class AddUser implements User {
     String email;
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public String getSurName() {
+
         return surName;
     }
 
@@ -24,10 +27,12 @@ public class AddUser implements User {
     }
 
     public String getEmail() {
+
         return email;
     }
 
     public void setEmail(String email) {
+
         this.email = email;
     }
 }
