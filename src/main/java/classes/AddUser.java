@@ -7,33 +7,40 @@ public class AddUser implements User {
     String surName;
     String email;
 
-    public String getName() {
-
-        return name;
-    }
-
-    public void setName(String name) {
-
-        this.name = name;
-    }
-
+    @Override
     public String getSurName() {
-
         return surName;
     }
 
-    public void setSurName(String surName) {
+    @Override
+    public String setSurName(String surName) {
         this.surName = surName;
+        return surName;
     }
 
+    @Override
     public String getEmail() {
-
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail() {
+        setEmail();
+    }
 
+    public String setEmail(String email) {
         this.email = email;
+        return email;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String setName(String name) {
+        this.name = name;
+        return name;
     }
 }
 
